@@ -6,9 +6,9 @@ const routes = require('./src/routes/index.js');
 const app = express();
 const port = 3004
 const server = http.createServer(app);
+connectDB();
 app.use(cors());
 app.use(express.json());
-connectDB();
 routes(app);
 app.get("/", (req, res) => {
         res.send("Hello World!, Mr. Anil Photography Backend");
