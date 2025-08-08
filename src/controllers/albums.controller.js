@@ -789,7 +789,7 @@ const shareAlbumsBylink = async (req, res) => {
     }
 
     // Get base URL from environment or use default
-    const baseUrl = 'http://localhost:3004';
+    const baseUrl = "http://localhost:3004";
     
     // Construct the share link
     
@@ -863,7 +863,7 @@ const shareAlbumsByQR = async (req, res) => {
     }
 
     // Get base URL from environment
-    const baseUrl = 'http://localhost:3004';
+    const baseUrl = "http://localhost:3004";
     
     if (!baseUrl) {
       return res.status(500).json({

@@ -26,6 +26,8 @@ const planMapUserRoutes = require('./Master/plan-map-user/plan-map-user.route.js
 const activityFeedRoutes = require('./Master/activity-feed/activity-feed.route.js');
 const designerDashboardRoutes = require('./Designer/designer-dashboard/designer-dashboard.route.js');
 const photographerDashboardRoutes = require('./Photographers/user/photographer-dashboard.route.js');
+const fileUploadRoutes = require('./Master/file-upload/file-upload.route.js');
+
 function routes(app) {
     app.use('/api/photographers/user', PhotographersUserRoutes);
     app.use('/api/photographers/dashboard', photographerDashboardRoutes);
@@ -55,6 +57,7 @@ function routes(app) {
     app.use('/api/plan-map-user', planMapUserRoutes);
     app.use('/api/activity-feed', activityFeedRoutes);
     app.use('/api/designer-dashboard', designerDashboardRoutes);
+    app.use('/api/file-upload', fileUploadRoutes);
 }
 
 module.exports = routes;

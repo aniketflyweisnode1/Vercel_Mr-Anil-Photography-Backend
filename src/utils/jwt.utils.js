@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'your-super-secret-jwt-key-change-this-in-production';
-const JWT_EXPIRES_IN = '24h';
+const JWT_SECRET = 'your-secret-key-change-in-production';
 
 // Generate JWT token
 const generateToken = (payload) => {
